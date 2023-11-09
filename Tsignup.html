@@ -90,7 +90,12 @@
         <form action="/examples/actions/confirmation.php" method="post" class="g-3">
             <div class="mb-3">
                 <h2>Sign up as Teacher</h2>
-            </div>      
+            </div>     
+            
+            <!-- User details for sign up -->
+           <div class="d-flex gap-5">
+             <!-- first layer of form  -->
+           <div>
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -107,6 +112,39 @@
                 <label for="confirm_password" class="form-label">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
             </div>
+           </div>
+
+            <!-- Second Layer of for  -->
+            <div>
+                <div class="mb-3">
+                    <label for="gender" class="w-100" class="form-label">Gender</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="" class="fw-lighter" disabled selected>Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Country</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="" class="fw-lighter" disabled selected>Select</option>
+                        <option value="male">Pakistan</option>
+                        <option value="female">Turkey</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">City</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Timezone</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+            </div>
+           </div>
+
+
+            
             <div class="mb-3">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="terms" required>
@@ -115,8 +153,8 @@
                     </label>
                 </div>
             </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Sign Up</button>
+            <div class="mb-3 text-center ">
+                <button type="submit" class="btn btn-primary">Sign Up as Teacher</button>
             </div>          
         </form>
     <div class="text-center text-white  ">Already have an account? <a href="#" class="text-white text-decoration-none login">Login here</a></div>
