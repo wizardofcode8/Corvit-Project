@@ -3,7 +3,14 @@
 }
 
 .txt_color{
-    color: #1C3F39;
+    /* color: #1C3F39; */
+    color: #FFFFFF;
+}
+a:hover{
+    color: #000000 !important;
+}
+.filter{
+    filter: grayscale(1);
 }
 
 .bg_color1{
@@ -25,7 +32,41 @@
 .txtsize1{
     font-size: 3.5rem;
 }
+/* Image slider */
+.mySlides {
+    display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.8s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  /* Image slider End */
+/*Res Content Box sizing */
+@media (min-width: 1200px)
+.box-container {
+    width: 1170px;
+}
 
+@media (min-width: 992px)
+.box-container {
+    width: 970px;
+}
+@media (min-width: 768px)
+.box-container {
+    width: 750px;
+}
+/*Res Content Box Sizing End */
 .img1{
     height: 300px;
     width: 300px;
